@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Surya Vikram - Full Stack Developer specializing in modern web technologies">
+    <meta name="keywords" content="developer, portfolio, web development, full stack, programming">
+    <meta name="author" content="Surya Vikram">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://suryavikram2003.github.io/portfolio/">
+    <meta property="og:title" content="Surya Vikram | Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in modern web technologies">
+    <meta property="og:image" content="images/og-image.png">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Surya Vikram | Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer specializing in modern web technologies">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <title>Surya Vikram | Portfolio</title>
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Home">
+                <span class="logo-text">SV</span>
+            </a>
+            
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== Hero Section ===== -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting animate-fade-in">Hello, I'm</span>
+                    <h1 id="hero-title" class="hero-title animate-fade-in-delay">Surya Vikram</h1>
+                    <p class="hero-subtitle animate-fade-in-delay-2">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description animate-fade-in-delay-3">
+                        I build exceptional digital experiences that make a difference.
+                    </p>
+                    <div class="hero-buttons animate-fade-in-delay-3">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-briefcase"></i> View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                    <div class="hero-social animate-fade-in-delay-3">
+                        <!-- CUSTOMIZE: Add your social media links here -->
+                        <a href="https://github.com/suryavikram2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate-fade-in-delay-2">
+                    <div class="hero-image-wrapper">
+                        <!-- CUSTOMIZE: Replace with your photo -->
+                        <div class="hero-avatar">
+                            <i class="fas fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- ===== About Section ===== -->
+        <section id="about" class="about section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">
+                    <span class="section-number">01.</span> About Me
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <!-- CUSTOMIZE: Add your biography here -->
+                        <p>
+                            Hello! I'm <strong>Surya Vikram</strong>, a passionate Full Stack Developer with a love for creating 
+                            elegant solutions to complex problems. My journey in programming started with curiosity 
+                            and has evolved into a fulfilling career building web applications.
+                        </p>
+                        <p>
+                            I specialize in building responsive, user-friendly applications using modern 
+                            technologies. I'm constantly learning and exploring new tools and frameworks to 
+                            deliver the best possible solutions.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new technologies, contributing to 
+                            open-source projects, or expanding my knowledge through online courses and tutorials.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Education</h4>
+                                    <!-- CUSTOMIZE: Add your education details -->
+                                    <p>Computer Science Graduate</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Location</h4>
+                                    <!-- CUSTOMIZE: Add your location -->
+                                    <p>Your City, Country</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-briefcase"></i>
+                                <div>
+                                    <h4>Experience</h4>
+                                    <!-- CUSTOMIZE: Add your experience -->
+                                    <p>Open to Opportunities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary" download aria-label="Download Resume">
+                            <!-- CUSTOMIZE: Add link to your resume -->
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-image-wrapper">
+                            <!-- CUSTOMIZE: Replace with your photo -->
+                            <div class="about-photo-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Skills Section ===== -->
+        <section id="skills" class="skills section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">
+                    <span class="section-number">02.</span> Skills & Technologies
+                </h2>
+                <p class="section-description">
+                    Here are some technologies I've been working with:
+                </p>
+                <!-- CUSTOMIZE: Add/remove skills as needed -->
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-vuejs"></i>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects Section ===== -->
+        <section id="projects" class="projects section" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">
+                    <span class="section-number">03.</span> Featured Projects
+                </h2>
+                <p class="section-description">
+                    A selection of projects I've worked on:
+                </p>
+                <!-- CUSTOMIZE: Add your projects here -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-featured e-commerce platform with shopping cart, payment integration, 
+                                and admin dashboard for managing products and orders.
+                            </p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                A collaborative task management application with real-time updates, 
+                                drag-and-drop functionality, and team collaboration features.
+                            </p>
+                            <div class="project-tech">
+                                <span>Vue.js</span>
+                                <span>Firebase</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-cloud-sun"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                A weather application that provides real-time weather data, forecasts, 
+                                and interactive maps using multiple weather APIs.
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>REST API</span>
+                                <span>Chart.js</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI Chat Bot</h3>
+                            <p class="project-description">
+                                An intelligent chatbot powered by machine learning that can answer 
+                                questions and provide customer support assistance.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Flask</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-blog"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blog Platform</h3>
+                            <p class="project-description">
+                                A modern blogging platform with markdown support, user authentication, 
+                                and a beautiful reading experience.
+                            </p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Prisma</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View live demo">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="View source code">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fitness Tracker</h3>
+                            <p class="project-description">
+                                A fitness tracking application with workout plans, progress tracking, 
+                                and social features for sharing achievements.
+                            </p>
+                            <div class="project-tech">
+                                <span>React Native</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-cta">
+                    <a href="https://github.com/suryavikram2003" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> View More on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="contact section" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">
+                    <span class="section-number">04.</span> Get In Touch
+                </h2>
+                <p class="section-description">
+                    I'm currently open to new opportunities. Whether you have a question or just want to say hi, 
+                    I'll try my best to get back to you!
+                </p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <!-- CUSTOMIZE: Add your email -->
+                                <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <!-- CUSTOMIZE: Add your location -->
+                                <p>Your City, Country</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <!-- CUSTOMIZE: Add your phone number -->
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <h4>Connect with me</h4>
+                            <div class="social-links">
+                                <!-- CUSTOMIZE: Add your social media links -->
+                                <a href="https://github.com/suryavikram2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name">
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email">
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <span class="error-message" id="subject-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            <div id="form-status" class="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">SV</span>
+                </div>
+                <p class="footer-text">
+                    Designed & Built by Surya Vikram
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/suryavikram2003" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">
+                    &copy; <span id="current-year"></span> All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
