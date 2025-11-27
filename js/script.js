@@ -367,11 +367,3 @@ document.addEventListener('keydown', (e) => {
         navToggle.setAttribute('aria-expanded', 'false');
     }
 });
-
-// ===== Prevent Flash of Wrong Theme =====
-(function() {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    }
-})();
